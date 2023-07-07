@@ -41,7 +41,8 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 BOARD_KERNEL_CMDLINE := \
     bootopt=64S3,32N2,64N2 \
-    loop.max_part=7
+    loop.max_part=7 \
+    androidboot.init_fatal_reboot_target=recovery
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
