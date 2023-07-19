@@ -265,38 +265,24 @@ vendor/firmware/tfa98xx.cnt
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
+vendor/firmware/BT_FW.cfg
+vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib/libbluetooth_mtk.so
+vendor/lib/libbluetooth_mtk_pure.so
 vendor/lib/libbt-vendor.so
-vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so
+vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so
-vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 
 # Bluetooth (A2DP)
-vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib/hw/android.hardware.bluetooth.audio@2.1-impl.so
-vendor/lib/hw/audio.bluetooth.default.so
-vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
-vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib/libbluetooth_audio_session.so
-vendor/lib/libbluetooth_audio_session_mediatek.so
-vendor/lib/libsehbluetooth_audio_session.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio@2.0.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio@2.1.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so
-vendor/lib64/hw/audio.bluetooth.default.so
-vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
-vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib64/libbluetooth_audio_session.so
-vendor/lib64/libbluetooth_audio_session_mediatek.so
-vendor/lib64/libsehbluetooth_audio_session.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-vendor/lib64/vendor.samsung.hardware.bluetooth.audio@2.0.so
-vendor/lib64/vendor.samsung.hardware.bluetooth.audio@2.1.so
+
+# Bluetooth (Firmware)
+vendor/firmware/soc5_0_ram_bt_1_1_hdr.bin|ac4a24c1db1f74ba59f083acbea242b0cd0fe6e1
 
 # Camera
 system_ext/lib/vendor.mediatek.hardware.camera.isphal@1.0.so
@@ -1900,7 +1886,6 @@ vendor/etc/wlan_common_rc
 vendor/etc/wlan_vendor_rc
 vendor/etc/xgf.cfg
 vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
-vendor/firmware/BT_FW.cfg
 vendor/firmware/SoundBoosterParam.bin
 vendor/firmware/WIFI
 vendor/firmware/WIFI_RAM_CODE_soc5_0_1_1.bin
@@ -1967,7 +1952,6 @@ vendor/firmware/mt6635_fm_channel_param.dat
 vendor/firmware/mt6635_fm_v1_coeff.bin
 vendor/firmware/mt6635_fm_v1_patch.bin
 vendor/firmware/remoteproc_scp
-vendor/firmware/soc5_0_ram_bt_1_1_hdr.bin
 vendor/firmware/soc5_0_ram_bt_1c_1_hdr.bin
 vendor/firmware/soc5_0_ram_mcu_1_1_hdr.bin
 vendor/firmware/soc5_0_ram_mcu_1c_1_hdr.bin
@@ -2039,7 +2023,6 @@ vendor/lib/libbeautyshot.arcsoft.so
 vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc32_vendor.so
 vendor/lib/libbluetooth_hw_test.so
-vendor/lib/libbluetooth_mtk_pure.so
 vendor/lib/libbluetooth_relayer.so
 vendor/lib/libbluetoothem_mtk.so
 vendor/lib/libbodyid.arcsoft.so
@@ -2292,7 +2275,6 @@ vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libbinderdebug.so
 vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libbluetooth_hw_test.so
-vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbluetooth_relayer.so
 vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbodyid.arcsoft.so
