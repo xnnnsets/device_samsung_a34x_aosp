@@ -1271,6 +1271,11 @@ vendor/lib64/hw/gatekeeper.mt6877.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl.so
 vendor/lib64/hw/gps.default.so
 
+# Hotword
+-product/priv-app/HotwordEnrollmentOKGoogleEx4RISCV/HotwordEnrollmentOKGoogleEx4RISCV.apk
+-product/priv-app/HotwordEnrollmentXGoogleEx4RISCV/HotwordEnrollmentXGoogleEx4RISCV.apk
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # GNSS configs
 vendor/etc/gnss/MNL_Config.xml
 vendor/etc/gnss/agps_profiles_conf2.xml
