@@ -67,6 +67,9 @@ subsystem dma_heap
 # CDMA radio interface MUX
 /dev/ppp                  0660   radio      vpn
 
+# Charger
+/sys/class/power_supply/battery input_suspend 0660 system system
+
 # Virtualisation is managed by Virt Manager
 /dev/kvm                  0600   virtmanager root
 /dev/vhost-vsock          0600   virtmanager root
