@@ -31,6 +31,18 @@ PRODUCT_PACKAGES += \
     android.hardware.health@1.0.vendor
 
 # Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayA34X \
+    FrameworksResOverlayA34X \
+    SettingsOverlayA34X \
+    TelephonyOverlayA34X \
+    TetheringResOverlayA34X \
+    WifiResOverlayA34X
+
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+# Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Rootdir
