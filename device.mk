@@ -17,6 +17,44 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    hdm_status.sh \
+    init.insmod.sh \
+
+PRODUCT_PACKAGES += \
+    fstab.emmc \
+    factory_init.connectivity.common.rc \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init.aee.rc \
+    init.ago.rc \
+    init.audio.samsung.rc \
+    init.cgroup.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6877.rc \
+    init.mt6877.usb.rc \
+    init.project.rc \
+    init.sec.rc \
+    init_conninfra.rc \
+    meta_init.connectivity.common.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    meta_init.vendor.rc \
+    multi_init.rc \
+    init.recovery.mt6877.rc \
+    init.recovery.usb.rc \
+    ueventd.rc-recovery
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_RAMDISK)/fstab.emmc \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6877:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6877
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
