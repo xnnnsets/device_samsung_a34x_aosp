@@ -72,7 +72,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6877:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6877
 
 PRODUCT_PACKAGES += \
-    init.recovery.mt6877.rc
+    init.recovery.mt6877.rc \
+    init.recovery.usb.rc
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
