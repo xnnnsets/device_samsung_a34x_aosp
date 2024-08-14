@@ -571,3 +571,5 @@ vendor.mtk.vdec.frame.layout.mode=0
 vendor.mtk.vdec.waitkeyframeforplay=7
 debug.stagefright.ccodec=1
 
+# Sensors
+ro.vendor.mtk.sensor.support=yes

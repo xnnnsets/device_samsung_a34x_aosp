@@ -565,7 +565,6 @@ vendor/lib/libmtkcam_debugutils.so
 vendor/lib/libmtkcam_grallocutils.so
 vendor/lib/libmtkcam_stdutils.so
 vendor/lib/libmtkcam_ulog.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib/unihal_android.so
 vendor/lib/unihal_cutils.so
 vendor/lib/unihal_entry.so
@@ -1031,7 +1030,6 @@ vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuron_runtime.so
 vendor/lib64/libneuron_wrapper.so
 vendor/lib64/libseccam_util.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/libvpu.so
 vendor/lib64/s5k4hayx_mipi_raw_IdxMgr.so
@@ -1416,9 +1414,11 @@ vendor/lib/sensors.sensorhub.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.inputvirtual.so
 vendor/lib64/sensors.sensorhub.so
-
-# Sensors configs
-vendor/etc/sensors/hals.conf
+vendor/lib64/libsensorndkbridge.so
+vendor/lib/libsensorndkbridge.so
+vendor/lib/android.hardware.sensors@1.0.so
+vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so
+vendor/lib/android.hardware.sensors@2.1.so
 
 # Soundtrigger
 vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
