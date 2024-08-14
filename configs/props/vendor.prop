@@ -112,6 +112,20 @@ ro.telephony.default_cdma_sub=0
 
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wifi.sap.interface=ap0
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.vendor.wlan.gen=gen4m
+
+# Connsys
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.coredump.mode=0
+persist.vendor.connsys.dynamic.dump=0
+persist.vendor.connsys.patch.version=-1
+persist.vendor.connsysfw.enable=true
+ro.vendor.connsys.dedicated.log.port=bt,wifi,ics,btmcu,wifimcu
+ro.vendor.connsys.dedicated.log=1
+vendor.connsys.driver.ready=no
 
 # Miscellaneous
 dalvik.vm.heapgrowthlimit=256m
