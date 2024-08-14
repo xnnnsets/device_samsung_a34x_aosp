@@ -278,8 +278,14 @@ vendor/lib64/libbt-vendor.so
 # Bluetooth (A2DP)
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-vendor/lib/vendor.samsung.hardware.bluetooth.audio@2.0.so
-vendor/lib/vendor.samsung.hardware.bluetooth.audio@2.1.so
+vendor/lib/libbluetooth_audio_session_mediatek.so
+vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
+vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
+vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
+vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
+vendor/lib64/libbluetooth_audio_session_mediatek.so
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
 # Bluetooth (Firmware)
 vendor/firmware/soc5_0_ram_bt_1_1_hdr.bin|ac4a24c1db1f74ba59f083acbea242b0cd0fe6e1
