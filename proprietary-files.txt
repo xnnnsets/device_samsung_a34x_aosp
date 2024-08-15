@@ -102,31 +102,6 @@ vendor/lib64/libspatializerparamstorage.so
 vendor/lib64/libvibrator.so
 vendor/lib64/spatializer-aidl-cpp.so
 
-# Audio configs
-etc/audio_effects.conf
-etc/audio_effects.xml
-etc/audio_effects_common.conf
-system_ext/etc/a2dp_audio_policy_configuration.xml
-system_ext/etc/a2dp_in_audio_policy_configuration.xml
-system_ext/etc/audio_policy_configuration.xml
-system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
-system_ext/etc/audio_policy_configuration_stub.xml
-system_ext/etc/audio_policy_engine_configuration.xml
-system_ext/etc/audio_policy_engine_default_stream_volumes.xml
-system_ext/etc/audio_policy_engine_product_strategies.xml
-system_ext/etc/audio_policy_engine_stream_volumes.xml
-system_ext/etc/audio_policy_volumes.xml
-system_ext/etc/bluetooth_audio_policy_configuration.xml
-system_ext/etc/default_volume_tables.xml
-system_ext/etc/hearing_aid_audio_policy_configuration.xml
-system_ext/etc/r_submix_audio_policy_configuration.xml
-system_ext/etc/usb_audio_policy_configuration.xml
-vendor/etc/a2dpsink_audio_policy_configuration.xml
-vendor/etc/bluetooth_audio_policy_configuration.xml
-vendor/etc/hearing_aid_audio_policy_configuration.xml
-vendor/etc/situation_audio_policy_volumes_sec.xml
-vendor/etc/usb_audio_policy_configuration.xml
-
 # Audio calibration
 vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_param/AudioParamOptions_vext.xml
@@ -291,8 +266,6 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/firmware/soc5_0_ram_bt_1_1_hdr.bin|ac4a24c1db1f74ba59f083acbea242b0cd0fe6e1
 
 # Camera
-system_ext/lib/vendor.mediatek.hardware.camera.isphal@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
 vendor/lib/hw/camera.unihal.default.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
@@ -1458,13 +1431,6 @@ vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/firmware/WIFI_RAM_CODE_soc5_0_1_1.bin|75f6e22bdf5430d0e2711ec6db9afc385c372936
 
 # Miscellaneous
-vendor/apex/com.samsung.android.authfw.ta.preload.apex
-vendor/apex/com.samsung.android.biometrics.face.signed.apex
-vendor/apex/com.samsung.android.biometrics.fingerprint.signed.apex
-vendor/apex/com.samsung.android.camera.unihal.signed.apex
-vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk
-vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk
-vendor/app/TetheringResOverlay/TetheringResOverlay.apk
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/hw/samsung.software.media.c2@1.0-service
@@ -1775,33 +1741,6 @@ vendor/etc/security/cacerts/fd08c599.0
 vendor/etc/security/cacerts/fde84897.0
 vendor/etc/str/str_preference_data.dat
 vendor/etc/sysconfig/vendor-apex-allowlist.xml
-vendor/etc/vintf/manifest/deviceManifest.xml
-vendor/etc/vintf/manifest/engmode_manifest.xml
-vendor/etc/vintf/manifest/face-default-sec.xml
-vendor/etc/vintf/manifest/hyper-default-sec.xml
-vendor/etc/vintf/manifest/lights-default-sec.xml
-vendor/etc/vintf/manifest/manifest_hwcomposer.xml
-vendor/etc/vintf/manifest/power-default.xml
-vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml
-vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.mediatek.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude_ship.mediatek.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_30.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.security.fkeymaster-service.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.security.widevine.keyprov-service.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.security.wsm.service-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_30.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.snap-default.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.kg@1.1-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.mpos_tui@1.0-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/FV-SAM-MTK2.dat
@@ -1829,9 +1768,6 @@ vendor/etc/ecc_list_OP236.xml
 vendor/etc/ecc_list_preference.xml
 vendor/etc/factory.ini
 vendor/etc/floating_feature.xml
-vendor/etc/fstab.emmc
-vendor/etc/fstab.enableswap
-vendor/etc/fstab.mt6877
 vendor/etc/fstab.ramplus
 vendor/etc/fstb.cfg
 vendor/etc/gbe.cfg
