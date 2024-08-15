@@ -106,6 +106,18 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     $(LOCAL_PATH)/configs/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-mediatek
+
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor \
+    vendor.mediatek.hardware.mtkpower@1.2.vendor
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # Rootdir
 PRODUCT_PACKAGES += \
     hdm_status.sh \
