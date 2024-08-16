@@ -44,6 +44,8 @@ BOARD_KERNEL_CMDLINE := \
     loop.max_part=7 \
     androidboot.init_fatal_reboot_target=recovery
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
