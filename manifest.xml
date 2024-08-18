@@ -501,4 +501,45 @@
         </interface>
         <fqname>@3.1::ISehSupplicant/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.vaultkeeper</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehVaultKeeper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>android.hardware.media.c2</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>default</instance>
+            <instance>default0</instance>
+        </interface>
+   </hal>
+   <hal format="hidl">
+       <name>android.hardware.nfc</name>
+       <transport>hwbinder</transport>
+       <version>1.2</version>
+       <interface>
+           <name>INfc</name>
+           <instance>default</instance>
+       </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.light</name>
+        <fqname>ILights/default</fqname>
+    </hal>
 </manifest>
