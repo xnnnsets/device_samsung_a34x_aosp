@@ -6,6 +6,11 @@
 
 DEVICE_PATH := device/samsung/a34x
 
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
@@ -28,6 +33,12 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 TARGET_BOOTLOADER_BOARD_NAME := a34x
 TARGET_NO_BOOTLOADER := true
 
+# Kernel-Prebuilt
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
+
 # Boot Image
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_OFFSET := 0x00008000
@@ -37,14 +48,11 @@ BOARD_RAMDISK_OFFSET := 0x11088000
 BOARD_DTB_OFFSET := 0x07c08000
 
 BOARD_BOOTIMG_HEADER_VERSION := 2
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 BOARD_KERNEL_CMDLINE := \
     bootopt=64S3,32N2,64N2 \
     loop.max_part=7 \
-    androidboot.init_fatal_reboot_target=recovery
-
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+    androidboot.selinux=permissive
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
@@ -55,23 +63,12 @@ BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --board "SRPVK25A005"
 
 # DTBO
-BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_KERNEL_SEPARATED_DTBO := 
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
-
+    $(DEVICE_PATH)/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
-# Kernel
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/samsung/mt6877
-TARGET_KERNEL_CONFIG := a34x_defconfig
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_NO_GCC := true
-BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
@@ -107,6 +104,21 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 TARGET_BOARD_PLATFORM := mt6877
 BOARD_HAS_MTK_HARDWARE := true
+
+# Display
+TARGET_SCREEN_DENSITY := 440
+
+# DTBO
+BOARD_KERNEL_SEPARATED_DTBO := true
+
+TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_VENDOR := vendor
+
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
+# SPL
+VENDOR_SECURITY_PATCH := 2024-06-01
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6877
