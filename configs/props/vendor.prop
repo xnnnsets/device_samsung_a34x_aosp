@@ -2,6 +2,9 @@
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 
+ro.product.first_api_level=33
+ro.boot.product.vendor.sku=
+
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac
 persist.bluetooth.a2dp_offload.disabled=true

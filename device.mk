@@ -13,6 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Boot
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
@@ -116,6 +118,19 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.manager@1.0.vendor \
+    android.hidl.manager@1.0 \
+    android.hidl.allocator@1.0.vendor \
+    android.hidl.memory@1.0.vendor \
+    libhwbinder \
+    libhwbinder.vendor \
+    libhidltransport \
+    libhidltransport.vendor \
+    android.hidl.base@1.0 \
+    android.hidl.base@1.0.vendor
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
@@ -181,6 +196,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.1.vendor \
     android.frameworks.sensorservice@1.0.vendor \
+    android.frameworks.sensorservice@1.0 \
     android.hardware.sensors@2.1-service.multihal
 
 PRODUCT_COPY_FILES += \

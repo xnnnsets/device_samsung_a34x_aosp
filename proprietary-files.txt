@@ -2510,3 +2510,19 @@ vendor/lib/libfgauge_gm30.so
 
 # Xmls
 -vendor/etc/vintf/manifest/power-default.xml:vendor/etc/vintf/manifest/power-default-mtk.xml
+
+# Modules(Kerne)
+vendor/lib/modules/bt_drv_6877.ko
+vendor/lib/modules/connfem.ko
+vendor/lib/modules/conninfra.ko
+vendor/lib/modules/fmradio_drv_connac2x.ko
+vendor/lib/modules/fpsgo.ko
+vendor/lib/modules/gps_drv.ko
+vendor/lib/modules/met.ko
+vendor/lib/modules/modules.alias
+vendor/lib/modules/modules.dep
+vendor/lib/modules/modules.load
+vendor/lib/modules/modules.softdep
+vendor/lib/modules/trace_mmstat.ko
+vendor/lib/modules/wlan_drv_gen4m.ko
+vendor/lib/modules/wmt_chrdev_wifi.ko
