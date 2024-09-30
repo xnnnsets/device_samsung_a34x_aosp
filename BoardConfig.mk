@@ -166,3 +166,5 @@ BOARD_VNDK_VERSION := current
 
 # Inherit the proprietary files
 include vendor/samsung/a34x/BoardConfigVendor.mk
+
+# TARGET_KERNEL_CONFIG := a34x_defconfig
