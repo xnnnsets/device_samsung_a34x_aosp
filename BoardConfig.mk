@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/samsung/a34x
+DEVICE_PATH := device/samsung/a34xp
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -36,8 +36,9 @@ TARGET_BOOTLOADER_BOARD_NAME := a34x
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image
-TARGET_PREBUILT_DTB := $(LOCAL_PATH)/prebuilt/dtb
+BOARD_PREBUILT_DTBOIMAGE := $(LOCAL_PATH)/prebuilt/dtbo.img
+TARGET_PREBUILT_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 
 # Boot Image
 BOARD_KERNEL_BASE := 0x40078000
