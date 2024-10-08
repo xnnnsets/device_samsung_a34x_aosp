@@ -6,7 +6,8 @@
 
 soong_namespace {
 }
-kernel-config-soong-rules {
+
+kernel_config_soong_rules {
     name: "kernel-config-soong-rules",
     srcs: [],
 }
