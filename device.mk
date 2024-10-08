@@ -178,7 +178,6 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     meta_init.vendor.rc \
     multi_init.rc \
-    init.recovery.mt6877.rc \
     ueventd.rc-recovery
 
 PRODUCT_COPY_FILES += \
