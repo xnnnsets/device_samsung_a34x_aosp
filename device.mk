@@ -179,7 +179,6 @@ PRODUCT_PACKAGES += \
     meta_init.vendor.rc \
     multi_init.rc \
     init.recovery.mt6877.rc \
-    init.recovery.usb.rc \
     ueventd.rc-recovery
 
 PRODUCT_COPY_FILES += \
@@ -188,7 +187,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     init.recovery.mt6877.rc \
-    init.recovery.usb.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
