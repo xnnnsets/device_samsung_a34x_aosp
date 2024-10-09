@@ -38,7 +38,7 @@ TARGET_NO_BOOTLOADER := true
 # Kernel
 BOARD_PREBUILT_DTBOIMAGE := $(LOCAL_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz
 
 # Boot Image
 BOARD_KERNEL_BASE := 0x40078000
