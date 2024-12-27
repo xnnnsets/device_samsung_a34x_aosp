@@ -221,8 +221,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    wpa_supplicant \
-    hostapd \
     libwifi-hal
 
 PRODUCT_PACKAGES += \
