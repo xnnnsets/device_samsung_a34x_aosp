@@ -1,4 +1,4 @@
-# Unpinned blobs from a34xdxx-user 14 UP1A.231005.007 A346EXXS7CXE2 release-keys
+# Unpinned blobs from a34xdxx-user 14 UP1A.231005.007 A346EXXU9CXK1 release-keys
 
 # AEE
 vendor/lib/libaedv.so
@@ -263,7 +263,7 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
 # Bluetooth (Firmware)
-vendor/firmware/soc5_0_ram_bt_1_1_hdr.bin|ac4a24c1db1f74ba59f083acbea242b0cd0fe6e1
+vendor/firmware/soc5_0_ram_bt_1_1_hdr.bin
 
 # Camera
 vendor/lib/hw/camera.unihal.default.so
@@ -1425,7 +1425,7 @@ vendor/lib64/libwifi-hal.so
 -vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml:vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service-mtk.xml
 
 # Wi-Fi (Firmware)
-vendor/firmware/WIFI_RAM_CODE_soc5_0_1_1.bin|75f6e22bdf5430d0e2711ec6db9afc385c372936
+vendor/firmware/WIFI_RAM_CODE_soc5_0_1_1.bin
 
 # Miscellaneous
 vendor/bin/hw/macloader
